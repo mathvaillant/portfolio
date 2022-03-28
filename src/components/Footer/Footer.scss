@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+
+.Footer {
+    background-color: $black;
+    border-top: 6px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    color: $white;
+    gap: 1rem;
+
+    div {
+        display: flex;
+        gap: 2rem;
+        
+        img {
+            width: 50px;
+            cursor: pointer;
+            transition: all 200ms;
+
+            &:hover {
+            transform: scale(1.1);
+            }
+        }
+    }
+}

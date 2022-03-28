@@ -1,0 +1,58 @@
+@import '../../sass/variables.scss';
+
+.Main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    clip-path: polygon(0 0, 44% 0, 100% 0, 100% 39%, 100% 96%, 37% 91%, 0 80%);
+    height: 100vh;
+    border: 6px solid $blue;
+    transition: all 2000ms;
+
+    &:hover {
+        clip-path: polygon(89% 0, 74% 68%, 100% 70%, 50% 100%, 0 70%, 25% 70%, 14% 0);
+    }
+
+    .Main__center {
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+
+        .Main__center__profile {
+            display: inherit;
+            flex-direction: column;
+            justify-content: inherit;
+            align-items: inherit;
+            gap: 1rem;
+
+            .profile__wrapper {
+                border-radius: 50%;
+                background-color: $blue;
+                width: 130px;
+                height: 130px;
+                display: inherit;
+                align-items: inherit;
+                justify-content: inherit;
+                padding: 1px;
+                
+                img {
+                    width: 97%;
+                    height: 94%;
+                    border-radius: 50%;
+                }
+            }
+
+            h1 + div {
+                display: flex;
+                gap: 1rem;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-weight: normal;
+            }
+        }
+    }
+}

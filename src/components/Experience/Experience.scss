@@ -1,0 +1,31 @@
+@import '../../sass/variables.scss';
+
+.Experience {
+    background-color: $blue;
+    border-top: 6px solid $white;
+    position: relative;
+}
+
+.vertical-timeline-element {
+    > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.vertical-timeline-element-content {
+    .tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+
+        span.badge.badge-pill {
+            background-color: $black;
+            color: $white;
+            padding: 3px 10px;
+            font-size: 13px;
+            border-radius: 12px;
+        }
+    }
+}

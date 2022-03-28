@@ -1,0 +1,36 @@
+@import '../../sass/variables.scss';
+
+.Skills {
+    @extend .defaultSectionWrapper;
+
+    h2 {
+        @extend .defaultTitle;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        background-color: white;
+        width: 100%;
+        border-top: 6px solid $blue;
+        border-bottom: 6px solid $blue;
+        padding: 2.5rem;
+
+        @include large-tablet {
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 50px;
+            height: auto;
+            max-height: 50px;
+            transition: all 100ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

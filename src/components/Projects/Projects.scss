@@ -1,0 +1,14 @@
+@import '../../sass/variables.scss';
+
+.Projects {
+    @extend .defaultSectionWrapper;
+    padding-bottom: 100px;
+
+    h2 {
+        @extend .defaultTitle;
+    }
+
+    > div {
+        @extend .defaultInnerSectionWrapper; 
+    }
+}
