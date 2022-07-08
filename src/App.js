@@ -1,3 +1,4 @@
+import ReactTooltip from 'react-tooltip';
 import './App.scss';
 import Main from "./components/Main/Main";
 import About from "./components/About/About";
@@ -14,11 +15,11 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
-
       <h3>Experience</h3>
       <Experience />
-
       <Footer />
+
+      <ReactTooltip delayUpdate={1000}/>
     </div>
   );
 }

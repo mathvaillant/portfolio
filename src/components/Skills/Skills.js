@@ -1,14 +1,15 @@
 import React from 'react';
 import './Skills.scss';
-import HTML from '../../assets/images/html.png';
-import CSS from '../../assets/images/css.png';
 import JS from '../../assets/images/js.png';
+import TS from '../../assets/images/ts.png';
 import SASS from '../../assets/images/sass.png';
 import REACT from '../../assets/images/react_logo.png';
 import REDUX from '../../assets/images/redux.png';
 import FIREBASE from '../../assets/images/firebase.png';
 import NODE from '../../assets/images/node.png';
 import GITHUB from '../../assets/images/github.png';
+import EXPRES from '../../assets/images/express.png';
+import MONGODB from '../../assets/images/mongodb.png';
 
 const Skills = () => {
   return (
@@ -16,15 +17,16 @@ const Skills = () => {
         <h2>Skills</h2>
 
         <div>
-            <img src={HTML} alt="" />
-            <img src={CSS} alt="" />
-            <img src={SASS} alt="" />
-            <img src={JS} alt="" />
-            <img src={REACT} alt="" />
-            <img src={REDUX} alt="" />
-            <img src={FIREBASE} alt="" />
-            <img src={GITHUB} alt="" />
-            <img src={NODE} alt="" />
+            <img data-tip="JavaScript" src={JS} alt="" />
+            <img data-tip="TypeScript" src={TS} alt="" />
+            <img data-tip="ReactJS" src={REACT} alt="" />
+            <img data-tip="Redux" src={REDUX} alt="" />
+            <img data-tip="Sass" src={SASS} alt="" />
+            <img data-tip="Firebase" src={FIREBASE} alt="" />
+            <img data-tip="Github" src={GITHUB} alt="" />
+            <img data-tip="NodeJS" src={NODE} alt="" />
+            <img data-tip="ExpressJS" src={EXPRES} alt="" />
+            <img data-tip="MongoDB" src={MONGODB} alt="" />
         </div>
     </div>
   )

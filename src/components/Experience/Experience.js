@@ -14,16 +14,17 @@ const experience = [
     "title": "FrontEnd Enginner",
     "years": "06.2021 - present",
     "mainTech": [
-      "React & Redux"
+      "React, Redux, NodeJS & Google Cloud Platform",
     ],
     "technologies": [
       "React",
       "Redux",
       "JavaScript",
       "TypeScript",
-      "Cypress",
       "Material UI",
-      "Node"
+      "Google Cloud Platform",
+      "NodeJS",
+      "MongoDB"
     ]
   },
   {
@@ -31,7 +32,7 @@ const experience = [
     "title": "Web Developer",
     "years": "07.2018 - 12.2019",
     "mainTech": [
-      "React, Redux & Firebase"
+      "React && Redux"
     ],
     "technologies": [
       "React",
