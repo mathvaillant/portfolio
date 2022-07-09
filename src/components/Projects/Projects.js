@@ -4,7 +4,6 @@ import OPEN from '../../assets/images/open.png';
 import GITHUBICON from '../../assets/images/githubicon.png';
 import STORE from '../../assets/gifs/ordeno.gif';
 import INFO from '../../assets/gifs/coronainfo.gif';
-import BARBER from '../../assets/gifs/samuelbarber.gif';
 import NASA from '../../assets/gifs/nasa.gif';
 
 const Projects = () => {
@@ -16,14 +15,6 @@ const Projects = () => {
       gifSrc: INFO,
       live: 'https://covid19-worldwide-livetracker.web.app/',
       code: 'https://github.com/mathvaillant/coronainfo',
-    },
-    {
-      title: 'Samuel Barber',
-      paragrah: 'Freelance profesisonal barber. Get in touch with the best barber in Lisbon!',
-      span: 'Built with React Js and EmailJs',
-      gifSrc: BARBER,
-      live: 'https://samuelhomebarber.web.app/',
-      code: 'https://github.com/mathvaillant/samuelbarber',
     },
     {
       title: 'Nasa Now',
