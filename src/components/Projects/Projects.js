@@ -5,9 +5,18 @@ import GITHUBICON from '../../assets/images/githubicon.png';
 import STORE from '../../assets/gifs/ordeno.gif';
 import INFO from '../../assets/gifs/coronainfo.gif';
 import NASA from '../../assets/gifs/nasa.gif';
+import BUGHASH from '../../assets/images/bughash.png';
 
 const Projects = () => {
   const projects = [
+    {
+      title: 'Bughash',
+      paragrah: 'Bug tracker app with support for description, image uploading and time tracking.',
+      span: 'Built with React, TypeScript, Express, MongoDB, Mongoose and Firebase Storage.',
+      gifSrc: BUGHASH,
+      live: 'https://bughash-app.web.app/',
+      code: 'https://github.com/mathvaillant/bughash',
+    },
     {
       title: 'Coronainfo',
       paragrah: 'Covid-19 tracker with the latest live data. ',
