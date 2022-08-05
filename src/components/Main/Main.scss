@@ -5,15 +5,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $white;
-    clip-path: polygon(0 0, 44% 0, 100% 0, 100% 39%, 100% 96%, 37% 91%, 0 80%);
     height: 100vh;
-    border: 6px solid $blue;
-    transition: all 2000ms;
-
-    &:hover {
-        clip-path: polygon(89% 0, 74% 68%, 100% 70%, 50% 100%, 0 70%, 25% 70%, 14% 0);
-    }
+    background-image: url('../../assets/images/bg.jpeg');
+    border-radius: 20px;
+    border: 10px solid $black;
+    background-position: top;
+    background-repeat: inherit;
+    background-size: cover;
 
     .Main__center {
         display: inherit;
@@ -26,6 +24,7 @@
             justify-content: inherit;
             align-items: inherit;
             gap: 1rem;
+            color: white;
 
             .profile__wrapper {
                 border-radius: 50%;
