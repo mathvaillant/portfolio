@@ -11,7 +11,7 @@ import REACT from '../../assets/images/react_logo.png';
 const experience = [
   {
     "company": "Planless.io",
-    "title": "FrontEnd Enginner",
+    "title": "Software Enginner",
     "years": "06.2021 - present",
     "mainTech": [
       "React, Redux, NodeJS & Google Cloud Platform",
