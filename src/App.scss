@@ -1,19 +1,36 @@
 @import './sass/variables.scss';
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: $font1;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .App {
-    background-color: $black;
+  display: flex;
+  flex-direction: column;
+}
 
-    h3 {
-        @extend .defaultTitle; 
-        color: $white;
-        text-align: center;
-        margin: 4rem;
-    }
+.Arrow {
+  animation: slideArrow 1s ease-in-out infinite;
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: x-large;
+}
+
+@keyframes slideArrow {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0px, 20px) rotate(0deg);
+  }
 }

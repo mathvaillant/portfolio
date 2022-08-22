@@ -3,14 +3,20 @@ $black: black;
 $white: whitesmoke;
 $grey0: #101010;
 $darkbg: #0a0a0a;
+$yellow: #FFBD59;
+$orange: #FF914D;
+$blue: #5271FF;
 $boxshadow: -1px 1px 20px -1px rgba(0, 0, 0, 0.75);
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 $font1: 'Poppins', sans-serif;
+$font2: 'League Spartan', sans-serif;
+$font3: 'Questrial', sans-serif;
 
 /* MEDIA QUERIES */
-
 $small-mobile-width: 320px;
 $mobile-width: 425px;
 $large-mobile-width: 620px;
@@ -56,136 +62,10 @@ $large-desktop-width: 1440px;
     }
 }
 
-/* DEFAULT SHOWCARD */
-.defaultSectionWrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: $black;
-    align-items: center;
-    justify-content: center;
-    color: $white;
-    gap: 3rem;
-    position: relative;
-    padding-top: 200px;
-}
-
-.defaultInnerSectionWrapper {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    box-shadow: $boxshadow;
-    position: relative;
-    margin: 2rem 0rem;
-
-    .container__inner {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        background: $darkbg;
-        border: 20px solid $darkbg;
-        position: relative;
-        margin: auto;
-        border-radius: 15px;
-
-        @include large-tablet {
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .container__img.project {
-            width: auto;
-            margin: auto 0px auto;
-
-            img {
-                width: 100%;
-                max-width: 800px;
-                height: auto;
-                border-radius: 12px;
-            }
-        }
-
-
-        .container__img:not(.project) {
-            width: 260px;
-            margin: auto 0px auto;
-
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-            }
-        }
-
-        .container__text {
-            max-width: 70%;
-            padding: 3rem 4rem;
-            margin-left: -3rem;
-            font-weight: 300;
-            font-size: 18px;
-            color: $blue;
-            line-height: 1.9rem;
-            background-color: $grey0;
-            border-radius: 12px;
-            box-shadow: $boxshadow;
-            transition: all 150ms;
-
-            > h1 {
-                color: $white;
-                font-weight: normal;
-                margin-bottom: 10px;
-            }
-
-            p.project {
-                color: $white;
-            }
-
-            p > span {
-                color: $blue;
-                font-style: italic;
-                font-weight: 600;
-            }
-
-            @include large-tablet {
-                width: 90%;
-                max-width: 90%;
-                padding: 2rem;
-                margin-left: 0rem;
-            }
-
-            &:hover {
-                border-left: 6px solid $blue;
-                margin-left: -2rem;
-            }
-            
-            a {
-                text-decoration: none;
-                color: $white;
-            }
-
-            .container__text__external {
-                display: flex;
-                gap: 2rem;
-                margin-top: 2rem;
-
-                img {
-                    width: 27px;
-                    cursor: pointer;
-                    transition: all 200ms;
-
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
-        }
-    }
-}
-
-.defaultTitle {
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: $blue;
-    padding: 2px;
-    font-size: 28px;
+.defaultBgCircle {
+    border-radius: 50%;
+    background: -webkit-linear-gradient(to left, $orange, $yellow); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, $orange, $yellow); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    transform: rotateZ(307deg);
 }

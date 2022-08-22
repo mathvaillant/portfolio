@@ -28,7 +28,7 @@ const experience = [
     ]
   },
   {
-    "company": "Freelancer",
+    "company": "Vaillant Media Web Solutions · Self-employed",
     "title": "Web Developer",
     "years": "07.2018 - 12.2019",
     "mainTech": [
@@ -46,7 +46,7 @@ const experience = [
 
 export const Experience = () => {
   return (
-    <section className='Experience'>
+    <section className='Experience' id='experience'>
       <div >
         <VerticalTimeline>
           {experience.map((work, index) => {

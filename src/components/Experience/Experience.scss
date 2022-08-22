@@ -1,35 +1,47 @@
 @import '../../sass/variables.scss';
 
 .Experience {
-    background-color: $blue;
+  position: relative;
+  font-family: $font1;
+  margin-top: 30vh;
+  padding-top: 5rem;
+
+  @include tablet {
+    margin-top: 10vh;
+    padding-top: 0rem;
+  }
+  
+  > div {
+    background: -webkit-linear-gradient(to left, $orange, $yellow);
+    background: linear-gradient(to left, $orange, $yellow);
     border-top: 6px solid $white;
-    position: relative;
+  }
 }
 
 .vertical-timeline-element {
-    > span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation: rotation 8s infinite linear !important;
-        -webkit-animation: rotation 8s infinite linear !important;
-    }
+  > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotation 8s infinite linear !important;
+    -webkit-animation: rotation 8s infinite linear !important;
+  }
 }
 
 .vertical-timeline-element-content {
-    .tech {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 
-        span.badge.badge-pill {
-            background-color: $black;
-            color: $white;
-            padding: 3px 10px;
-            font-size: 13px;
-            border-radius: 12px;
-        }
+    span.badge.badge-pill {
+        background-color: $black;
+        color: $white;
+        padding: 3px 10px;
+        font-size: 13px;
+        border-radius: 12px;
     }
+  }
 }
 
 @keyframes rotation {

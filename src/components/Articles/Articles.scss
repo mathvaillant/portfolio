@@ -1,0 +1,59 @@
+@import '../../sass/variables.scss';
+
+.Articles {
+    min-width: 1000px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 12rem 0rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100vh;
+    gap: 5rem;
+    position: relative;
+
+    @include tablet {
+        display: none;
+    }
+
+    span.bgCircle {
+        @extend .defaultBgCircle;
+        position: absolute;
+        z-index: 1;
+        width: 140px;
+        height: 140px;
+        left: 100px;
+        top: 150px;
+    };
+    
+    h1 {
+        font-family: $font2;
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 4rem;
+        max-width: max-content;
+        z-index: 2;
+        position: relative;
+    }
+
+    .Articles__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border: 4px dashed black;
+            max-width: 450px;
+            cursor: pointer;
+
+            @include tablet {
+                max-width: 300px;
+            }
+
+            &:hover {
+                filter: brightness(.8);
+            }
+        }
+    }
+
+}
