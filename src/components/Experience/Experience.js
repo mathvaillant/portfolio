@@ -10,9 +10,25 @@ import REACT from '../../assets/images/react_logo.png';
 
 const experience = [
   {
+    "company": "HydraDev.io",
+    "title": "Software Enginner",
+    "years": "10.2022 - present",
+    "mainTech": [
+      "React, NodeJS & MongoDB",
+    ],
+    "technologies": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Material UI",
+      "NodeJS",
+      "MongoDB"
+    ]
+  },
+  {
     "company": "Planless.io",
     "title": "Software Enginner",
-    "years": "06.2021 - present",
+    "years": "06.2021 - 09.2022",
     "mainTech": [
       "React, Redux, NodeJS & Google Cloud Platform",
     ],
