@@ -27,7 +27,7 @@ const Showcase = () => {
                 <Typical className="title-styles" steps={['Software Engineer']} />
             </h1>
             <small >Based in Portugal, building full-stack web applications. 
-            Currently working as a full-stack developer for a Lisbon-based startup.
+            Currently working as a Software Engineer for the coolest Portuguese company. 💻 🚀 
             </small>
             <a id='hireme' href={CV} download={true}>Download CV</a>
         </div>
