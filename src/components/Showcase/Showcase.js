@@ -30,8 +30,9 @@ const Showcase = () => {
 					/>
 				</h1>
 				<small>
-					Software Engineer based in Portugal, building full-stack web
-					& mobile applications 💻 🚀
+					Based in Portugal, building full-stack web applications.
+					Currently working as a Software Engineer for the coolest
+					Portuguese company. 💻 🚀
 				</small>
 				<a id='hireme' href={CV} download={true}>
 					Download CV
