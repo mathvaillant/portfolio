@@ -24,7 +24,6 @@ const Header = () => {
         <a href="/"><img src={dark ? LogoDark : LogoWhite} alt="" /></a>
         <a href="#showcase">Home</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </ul>
