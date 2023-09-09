@@ -4,7 +4,7 @@ import Me from '../../assets/me.png';
 import './Profile.scss';
 
 const Profile = () => {
-	const [hidden, setHidden] = React.useState(true);
+	const [hidden, setHidden] = React.useState(false);
 
 	React.useEffect(() => {
 		const triangle1Slide = {
