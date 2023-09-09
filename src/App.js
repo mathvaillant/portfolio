@@ -17,7 +17,7 @@ const App = () => {
       <Profile />
       <Showcase/>
       <Skills />
-      <Projects />
+      // <Projects />
       <Articles />
       <Experience />
       <Footer />
